@@ -1,0 +1,96 @@
+<section class="block-section">
+  <div class="block-container">
+    <img src="./pictures/block.webp" class="block-image1">
+  </div>
+  <div class="poem-container">
+    <p class="poem-text">
+      Ветер принес издалёка<br>
+      Песни весенней намек,<br>
+      Где-то светло и глубоко<br>
+      Неба открылся клочок.<br>
+      В этой бездонной лазури<br>
+      В сумерках близкой весны<br>
+      Плакали зимние бури,<br>
+      Реяли звездные сны.<br>
+      Робко, темно и глубоко<br>
+      Плакали струны мои.<br>
+      Ветер принес издалёка<br>
+      Звучные песни твои.<br>
+    </p>
+  </div>
+</section>
+
+<section class="block-section">
+  <div class="block-container">
+    <img src="./pictures/esenin.webp" class="block-image2">
+  </div>
+  <div class="poem-container">
+    <p class="poem-text">
+      Сыплет черемуха снегом,<br>
+      Зелень в цвету и росе.<br>
+      В поле, склоняясь к побегам,<br>
+      Ходят грачи в полосе.<br>
+      Никнут шелковые травы,<br>
+      Пахнет смолистой сосной.<br>
+      Ой вы, луга и дубравы,—<br>
+      Я одурманен весной.<br>
+      Радугой тайные вести<br>
+      Светятся в душу мою.<br>
+      Думаю я о невесте,<br>
+      Только о ней лишь пою.<br>
+      Сыпь ты, черемуха, снегом,<br>
+      Пойте вы, птахи, в лесу.<br>
+      По полю зыбистым бегом<br>
+      Пеной я цвет разнесу.<br>
+    </p>
+  </div>
+</section>
+
+<p class="section-heading">Картины</p>
+<div class="paintings-container">
+  <div class="portrait-container">
+    <img src="pictures/levitan.jpg" alt="Портрет Левитана">
+  </div>
+  <div class="paintings-list">
+    <img src="pictures/Mart.jpg" alt="Картина Марта">
+    <img src="pictures/RASPUTICA.jpg" alt="Картина Распутицы">
+  </div>
+</div>
+   <p class="section-heading">Музыка</p>
+   <div class = "gov">
+  <img src="./pictures/chaykovskiy_8986_fotobank_.jpg">
+  </div>
+   <div>
+      <button class="music-btn" onclick="playChaiSound()">Воспроизвести музыку (Чайковский)</button>
+      <button class="music-btn" onclick="stopSound()">Остановить музыку</button>
+   </div>
+
+   <!-- Аудиофайлы -->
+   <audio id="audioChai" src="./music/П И Чайковский  Весна (256  kbps).mp3"></audio>
+   <audio id="audioViv" src="./music/vivaldi_-_Vesna_62860368.mp3"></audio>
+
+   <!-- JavaScript код -->
+   <script>
+     var audioChai = document.getElementById("audioChai");
+     var audioViv = document.getElementById("audioViv");
+
+     function playChaiSound() {
+       audioChai.play();
+     }
+
+     function playVivSound() {
+       audioViv.play();
+     }
+
+     function stopSound() {
+       audioChai.pause();
+       audioViv.pause();
+       audioChai.currentTime = 0;
+       audioViv.currentTime = 0;
+     }
+   </script>
+   <img src="./pictures/scale_1200.jpg">
+   <div>
+    <button class="music-btn" onclick="playVivSound()">Воспроизвести музыку (Вивальди)</button>
+    <button class="music-btn" onclick="stopSound()">Остановить музыку</button>
+ </div>
